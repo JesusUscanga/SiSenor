@@ -20,8 +20,10 @@ namespace SiSenor
 
         private void Home_Btn_Comida_Clicked(object sender, EventArgs e)
         {
-            //((NavigationPage)this.Parent).PushAsync(new Maps());
-            Navigation.PushAsync(new GridLayout());
+
+            //Navigation.PushAsync(new GridLayout());
+            Tipos.IsVisible = true;
+            Secciones.IsVisible = false; 
         }
     }
 }

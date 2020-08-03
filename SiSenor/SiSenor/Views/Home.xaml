@@ -7,7 +7,7 @@
              x:Class="SiSenor.Home">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout>
+            <StackLayout x:Name="Secciones">
             <Button
                 x:Name="Home_Btn_Comida"
                 Text="Comida"
@@ -35,7 +35,7 @@
                 BackgroundColor="Green"
                 TextColor="White" />
             </StackLayout>
-            <StackLayout x:Name="Tipos">
+            <StackLayout x:Name="Tipos" IsVisible="false">
                 <ScrollView>
                     <Grid RowSpacing="60" ColumnSpacing="60" Padding="20">
                         <Grid.RowDefinitions>
