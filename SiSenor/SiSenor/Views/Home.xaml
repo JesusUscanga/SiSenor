@@ -35,7 +35,7 @@
                 BackgroundColor="Green"
                 TextColor="White" />
             </StackLayout>
-            <StackLayout x:Name="">
+            <StackLayout x:Name="Tipos">
                 <ScrollView>
                     <Grid RowSpacing="60" ColumnSpacing="60" Padding="20">
                         <Grid.RowDefinitions>
