@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using SiSenor.Views.Description;
 
 namespace SiSenor
 {
@@ -15,6 +16,12 @@ namespace SiSenor
         public GridLayout()
         {
             InitializeComponent();
+            ComidaSeccion_btn_Tacos.Clicked += ComidaSeccion_btn_Tacos_Clicked;
+        }
+
+        private void ComidaSeccion_btn_Tacos_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PlantillaDescripcion());
         }
     }
 }

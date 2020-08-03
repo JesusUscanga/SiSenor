@@ -6,11 +6,13 @@
              mc:Ignorable="d"
              x:Class="SiSenor.GridLayout">
     <ContentPage.Content>
-        <Grid RowSpacing="60" ColumnSpacing="60">
+        <ScrollView>
+        <Grid RowSpacing="60" ColumnSpacing="60" Padding="20">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
+                <RowDefinition Height="250" />
+                <RowDefinition Height="250" />
+                <RowDefinition Height="250" />
+                <RowDefinition Height="250" />
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -18,15 +20,17 @@
                 <ColumnDefinition  Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Button BackgroundColor="#E6287A" Grid.Row="0" Grid.Column="0" Text="Button 0,0" TextColor="White" />
-            <Button BackgroundColor="#EE5D9B" Grid.Row="0" Grid.Column="1" Text="Button 0,1" TextColor="White" />
-            <Button BackgroundColor="#F87EB2" Grid.Row="1" Grid.Column="0" Text="Button 1,0" TextColor="White" />
-            <Button BackgroundColor="#B90E57" Grid.Row="1" Grid.Column="1" Text="Button 1,1" TextColor="White" />
-            <Button BackgroundColor="#CB3B78" Grid.Row="2" Grid.Column="0" Text="Button 2,0" TextColor="White" />
-            <Button BackgroundColor="#DE7FA7" Grid.Row="2" Grid.Column="1" Text="Button 2,1" TextColor="White" />
+            <Button x:Name="ComidaSeccion_btn_Tacos" BackgroundColor="#E6287A" Grid.Row="0" Grid.Column="0" Text="Tacos" TextColor="White" />
+            <Button BackgroundColor="#EE5D9B" Grid.Row="0" Grid.Column="1" Text="Hamburguesas" TextColor="White" />
+            <Button BackgroundColor="#F87EB2" Grid.Row="1" Grid.Column="0" Text="Postres" TextColor="White" />
+            <Button BackgroundColor="#B90E57" Grid.Row="1" Grid.Column="1" Text="Pizza" TextColor="White" />
+            <Button BackgroundColor="#CB3B78" Grid.Row="2" Grid.Column="0" Text="Asados" TextColor="White" />
+            <Button BackgroundColor="#DE7FA7" Grid.Row="2" Grid.Column="1" Text="Pastas" TextColor="White" />
+            <Button BackgroundColor="#CB3B78" Grid.Row="3" Grid.Column="0" Text="Sushi" TextColor="White" />
+            <Button BackgroundColor="#DE7FA7" Grid.Row="3" Grid.Column="1" Text="Snacks" TextColor="White" />
 
-            
-        </Grid>
 
+            </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

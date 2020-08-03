@@ -15,6 +15,13 @@ namespace SiSenor
         public Home()
         {
             InitializeComponent();
+            Home_Btn_Comida.Clicked += Home_Btn_Comida_Clicked;
+        }
+
+        private void Home_Btn_Comida_Clicked(object sender, EventArgs e)
+        {
+            //((NavigationPage)this.Parent).PushAsync(new Maps());
+            Navigation.PushAsync(new GridLayout());
         }
     }
 }
