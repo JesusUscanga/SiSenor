@@ -11,5 +11,5 @@
   <!--Pages can be added as references or inline-->
     <sisenor:Home Title="Home" IconImageSource="home.png"></sisenor:Home>
     <sisenor:Maps Title="Maps" IconImageSource="Location.png"></sisenor:Maps>
-    <sisenor:GridLayout Title="Search" IconImageSource="search.png"></sisenor:GridLayout>
+    <sisenor:CollectionView1 Title="Search" IconImageSource="search.png"></sisenor:CollectionView1>
 </TabbedPage>
