@@ -17,16 +17,22 @@ namespace SiSenor
         {
             InitializeComponent();
             Ilist = new List<Product>();
-            Ilist.Add(new Product { ProductName = "Laptop", Description = "This is description", ImageURL = "tacos1.jpg" });
-            Ilist.Add(new Product { ProductName = "Laptop1", Description = "This is description", ImageURL = "tacos2.jpg" });
-            Ilist.Add(new Product { ProductName = "Laptop2", Description = "This is description", ImageURL = "tacos1.jpg" });
-            Ilist.Add(new Product { ProductName = "Laptop3", Description = "This is description", ImageURL = "tacos2.jpg" });
-            Ilist.Add(new Product { ProductName = "Laptop4", Description = "This is description", ImageURL = "tacos1.jpg" });
-            Ilist.Add(new Product { ProductName = "Laptop5", Description = "This is description", ImageURL = "tacos2.jpg" });
-            Ilist.Add(new Product { ProductName = "Laptop6", Description = "This is description", ImageURL = "tacos1.jpg" });
-            Ilist.Add(new Product { ProductName = "Laptop7", Description = "This is description", ImageURL = "tacos2.jpg" });
-            Ilist.Add(new Product { ProductName = "Laptop8", Description = "This is description", ImageURL = "tacos1.jpg" });
+            Ilist.Add(new Product { ProductName = "Tacos", Description = "This is description", ImageURL = "tacos1.jpg" });
+            Ilist.Add(new Product { ProductName = "Hamburguesas", Description = "This is description", ImageURL = "tacos2.jpg" });
+            Ilist.Add(new Product { ProductName = "Pastas", Description = "This is description", ImageURL = "tacos1.jpg" });
+            Ilist.Add(new Product { ProductName = "Pizza", Description = "This is description", ImageURL = "tacos2.jpg" });
+            Ilist.Add(new Product { ProductName = "Pasteles", Description = "This is description", ImageURL = "tacos1.jpg" });
+            Ilist.Add(new Product { ProductName = "Snacks", Description = "This is description", ImageURL = "tacos2.jpg" });
+            Ilist.Add(new Product { ProductName = "Carnes", Description = "This is description", ImageURL = "tacos1.jpg" });
+            Ilist.Add(new Product { ProductName = "Ensaladas", Description = "This is description", ImageURL = "tacos2.jpg" });
+            Ilist.Add(new Product { ProductName = "Postres", Description = "This is description", ImageURL = "tacos1.jpg" });
             BindingContext = this;
+        }
+
+        private void Search1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var searchresult = Ilist.Where(c => c.ProductName.ToLower().Contains(Search1.Text.ToLower()));
+            Coll1.ItemsSource = searchresult;
         }
     }
 

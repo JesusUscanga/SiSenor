@@ -6,6 +6,9 @@
              mc:Ignorable="d"
              x:Class="SiSenor.CollectionView1">
     <ContentPage.Content>
+        <StackLayout>
+        <SearchBar x:Name="Search1" Placeholder="Search" CancelButtonColor="Orange" PlaceholderColor="Gray"
+                   HorizontalTextAlignment="Center" TextChanged="Search1_TextChanged"></SearchBar>
         <CollectionView x:Name="Coll1" ItemsSource="{Binding Ilist}" ItemsLayout="VerticalList">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
@@ -28,5 +31,6 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
