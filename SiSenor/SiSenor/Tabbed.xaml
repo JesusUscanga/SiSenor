@@ -6,10 +6,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sisenor="clr-namespace:SiSenor"
             mc:Ignorable="d"
              x:Class="SiSenor.Tabbed"
-            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" 
+            xmlns:sisenor1="clr-namespace:SiSenor.Views.Description"
             android:TabbedPage.ToolbarPlacement="Bottom">
   <!--Pages can be added as references or inline-->
     <sisenor:Home Title="Home" IconImageSource="home.png"></sisenor:Home>
     <sisenor:Maps Title="Maps" IconImageSource="Location.png"></sisenor:Maps>
-    <sisenor:CollectionView1 Title="Search" IconImageSource="search.png"></sisenor:CollectionView1>
+    <sisenor1:PlantillaDescripcion Title="Search" IconImageSource="search.png"></sisenor1:PlantillaDescripcion>
 </TabbedPage>

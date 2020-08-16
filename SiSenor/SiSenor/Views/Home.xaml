@@ -63,6 +63,31 @@
                     </Grid>
                 </ScrollView>
             </StackLayout>
+            <StackLayout x:Name="Descripcion" IsVisible="false">
+                <Image Source="logoTacos.jpg" HorizontalOptions="Center" WidthRequest="200" HeightRequest="200"/>
+                <Label Text="Los Weros" HorizontalOptions="Center"></Label>
+                <Label Text="Direccion:"/>
+                <Label Text="Av. Salvador Díaz Mirón 318, Remes, 91920 Veracruz, Ver."/>
+                <Label Text="Telefono:"/>
+                <Label Text="2605598"/>
+                <Label Text="Horario:"/>
+                <Label Text="11:00 am - 03:00am"/>
+                <StackLayout>
+                    <Grid ColumnSpacing="60" Padding="20">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="Whats" BackgroundColor="Green" Grid.Row="0" Grid.Column="0" Text="Whatsapp" TextColor="White" Clicked="Whats_Clicked" />
+                        <Button BackgroundColor="Red" Grid.Row="0" Grid.Column="1" Text="Menu" TextColor="White" />
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
 
 

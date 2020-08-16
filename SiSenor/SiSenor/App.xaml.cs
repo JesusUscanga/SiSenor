@@ -9,8 +9,8 @@ namespace SiSenor
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new Tabbed());
-
+            ///MainPage = new NavigationPage(new Tabbed());
+            MainPage = new Tabbed();
 
         }
 

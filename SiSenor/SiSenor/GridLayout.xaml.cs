@@ -21,7 +21,7 @@ namespace SiSenor
 
         private void ComidaSeccion_btn_Tacos_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new PlantillaDescripcion());
+            //Navigation.PushAsync(new PlantillaDescripcion());
         }
     }
 }
